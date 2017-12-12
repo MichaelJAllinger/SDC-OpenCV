@@ -1,0 +1,18 @@
+main.py:
+
+	1. einmaliges Aufrufen von Start.py
+		=> Starten des Videocaptures
+		=> Checken der Sensoren (falls umringt => Rückwärtsgang)
+		=> Warten auf Grüne Ampel
+
+	2. Starten des Fahrtalgorythmus
+		=> Aufrufen der Subroutinen
+			-> Cam
+			-> Sensoren
+			-> Motorsteuerung
+				... Drive-Befehle
+	3. Nach Stop-Befehl, alle Systeme ausschalten.
+
+
+
+
