@@ -1,6 +1,6 @@
 CAR_MODE = "GO"
 import start
-
+"""
 while (CAR_MODE="GO") # keep ready
 	cam #hier soll noch die Kamera-Auswertung hin
 	
@@ -25,4 +25,8 @@ while (CAR_MODE="GO") # keep ready
 if (CAR_MODE="STOP") # Stop car after finish line
 
 	GPIO.cleanup()
-	print ("Das Auto ist über die Ziellinie gefahren und hat erfolgreich abgeschalten")
+	print ("Das Auto ist über die Ziellinie gefahren und hat erfolgreich abgeschaltet")
+	
+"""
+
+print (STATE)

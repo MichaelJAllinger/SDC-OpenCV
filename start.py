@@ -42,6 +42,8 @@ GPIO.setup(RIGHT_GPIO_ECHO, GPIO.IN)
 GPIO.setup(FRONT_GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(FRONT_GPIO_ECHO, GPIO.IN)
 
+video_capture = cv2.VideoCapture(0)         # -1: zufällige Kamera auswählen 
+
 """
 
 STATE = "WAITGREEN"
