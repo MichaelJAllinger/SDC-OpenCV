@@ -6,13 +6,13 @@ while (CAR_MODE="GO") # keep ready
 	
 	distance # Hier sollen die Entfernungen gemessen und gespeichert werden
 	
-	if (STATE="WAITGREEN") # cam, ports and sensors ready
+	if (STATE=="WAITGREEN") # cam, ports and sensors ready
 		print ("Bereit zum Start!")
 				
-	elif (STATE="WAITBLUE") # waiting for finish line
+	elif (STATE=="WAITBLUE") # waiting for finish line
 		print ("Go!")
 	
-	elif (STATE="WASBLUE") # finish line spotted, drive over finish line
+	elif (STATE=="WASBLUE") # finish line spotted, drive over finish line
 		print ("Ziellinie in Sicht!")
 		import calc_drive from drive
 		time.sleep (10)
@@ -29,4 +29,5 @@ if (CAR_MODE="STOP") # Stop car after finish line
 	
 """
 
-print (STATE)
+print (start.STATE)
+GPIO.cleanup()
