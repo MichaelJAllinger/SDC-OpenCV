@@ -1,4 +1,4 @@
-def distanz_front():
+def DISTANCE_FRONT():
     GPIO.output(FRONT_GPIO_TRIGGER, True)    #10us-Impuls erzeugen
     time.sleep(0.000001)
     GPIO.output(FRONT_GPIO_TRIGGER, False)
@@ -12,3 +12,4 @@ def distanz_front():
     Techo = StopZeit-StartZeit
     distanz_front = (Techo * 33e3) / 2       #Ergebnis in cm
     return distanz_front
+	DISTANCE_FRONT=distanz_front
