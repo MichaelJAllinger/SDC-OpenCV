@@ -1,0 +1,3 @@
+MotorL = GPIO.PWM(PIN_ENA, 50.0)
+MotorR = GPIO.PWM(PIN_ENB, 50.0)
+

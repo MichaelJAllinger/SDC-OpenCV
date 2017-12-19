@@ -4,10 +4,13 @@ import time
 import numpy as np
 import cv2
 
-#Global GPIO Mode setzen
+#Set State
+STATE = "START"
+
+#set global GPIO mode
 GPIO.setmode(GPIO.BCM)
 
-#Motorsteuerung definieren
+#def motor + def calc_drive
 PIN_ENA = 18
 PIN_IN1 = 23
 PIN_IN2 = 24
@@ -23,7 +26,7 @@ GPIO.setup(PIN_IN2, GPIO.OUT)
 GPIO.setup(PIN_ENB, GPIO.OUT)
 GPIO.setup(PIN_IN3, GPIO.OUT)
 GPIO.setup(PIN_IN4, GPIO.OUT)
-
+"""
 #Sensoren definieren
 FRONT_GPIO_TRIGGER = 
 FRONT_GPIO_ECHO = 
@@ -39,5 +42,6 @@ GPIO.setup(RIGHT_GPIO_ECHO, GPIO.IN)
 GPIO.setup(FRONT_GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(FRONT_GPIO_ECHO, GPIO.IN)
 
+"""
 
-
+STATE = "WAITGREEN"
