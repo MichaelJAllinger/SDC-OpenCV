@@ -1,58 +1,43 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.6.1"
-  },
-  "toc": {
-   "colors": {
-    "hover_highlight": "#DAA520",
-    "navigate_num": "#000000",
-    "navigate_text": "#333333",
-    "running_highlight": "#FF0000",
-    "selected_highlight": "#FFD700",
-    "sidebar_border": "#EEEEEE",
-    "wrapper_background": "#FFFFFF"
-   },
-   "moveMenuLeft": true,
-   "nav_menu": {
-    "height": "12px",
-    "width": "252px"
-   },
-   "navigate_menu": true,
-   "number_sections": true,
-   "sideBar": true,
-   "threshold": 4,
-   "toc_cell": false,
-   "toc_section_display": "block",
-   "toc_window_display": false,
-   "widenNotebook": false
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+#Global Import
+import RPi.GPIO as GPIO
+import time
+import numpy as np
+import cv2
+
+#Global GPIO Mode setzen
+GPIO.setmode(GPIO.BCM)
+
+#Motorsteuerung definieren
+PIN_ENA = 18
+PIN_IN1 = 23
+PIN_IN2 = 24
+
+PIN_ENB = 16
+PIN_IN3 = 25
+PIN_IN4 = 12
+
+GPIO.setup(PIN_ENA, GPIO.OUT)
+GPIO.setup(PIN_IN1, GPIO.OUT)
+GPIO.setup(PIN_IN2, GPIO.OUT)
+
+GPIO.setup(PIN_ENB, GPIO.OUT)
+GPIO.setup(PIN_IN3, GPIO.OUT)
+GPIO.setup(PIN_IN4, GPIO.OUT)
+
+#Sensoren definieren
+FRONT_GPIO_TRIGGER = 
+FRONT_GPIO_ECHO = 
+RIGHT_GPIO_TRIGGER = 
+RIGHT_GPIO_ECHO = 
+LEFT_GPIO_TRIGGER = 
+LEFT_GPIO_ECHO = 
+
+GPIO.setup(LEFT_GPIO_TRIGGER, GPIO.OUT)
+GPIO.setup(LEFT_GPIO_ECHO, GPIO.IN)
+GPIO.setup(RIGHT_GPIO_TRIGGER, GPIO.OUT)
+GPIO.setup(RIGHT_GPIO_ECHO, GPIO.IN)
+GPIO.setup(FRONT_GPIO_TRIGGER, GPIO.OUT)
+GPIO.setup(FRONT_GPIO_ECHO, GPIO.IN)
+
+
+
